@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inscripcion</title>
+    <link rel="stylesheet" href="assets/css/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/lib/toast/toastr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <link rel="stylesheet" href="assets/css/site/site.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <div id="content-container" class="row justify-content-center">
+            <div class="mt-5 col-5">
+                <div class="card rounded-0">
+                    <div class="card-header text-bg-dark rounded-0">
+                        <h2>Datos Personales</h2>
+                    </div>
+                    <div class="card-body">
+                        <div id="nmUser">
+                            <label for="userNm" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control form-control-sm" id="userNm" />
+                        </div>
+
+                        <div id="prvncUser" class="mt-3">
+                            <label for="userPrvnc" class="form-label">Provincia:</label>
+                            <input type="text" class="form-control form-control-sm" id="userPrvnc" />
+                        </div>
+
+                        <div id="ctyUser" class="mt-3">
+                            <label for="userCty" class="form-label">Ciudad:</label>
+                            <input type="text" class="form-control form-control-sm" id="userCty" />
+                        </div>
+
+                        <div id="sctUser" class="mt-3">
+                            <label for="userSct" class="form-label">Sector:</label>
+                            <input type="text" class="form-control form-control-sm" id="userSct" />
+                        </div>
+
+                        <div id="strtUser" class="mt-3">
+                            <label for="userStrt" class="form-label">Calle:</label>
+                            <input type="text" class="form-control form-control-sm" id="userStrt" />
+                        </div>
+
+                        <div id="crrUser" class="mt-3">
+                            <label for="userCrr" class="form-label">Carrera:</label>
+                            <select class="skillScore form-select" id="userCrr">
+                                <option value="">Selecciona una opción</option>
+                                <option value="software">Software</option>
+                                <option value="mechatronics">Mecatrónica</option>
+                                <option value="sound">Sonido</option>
+                            </select>
+                        </div>
+
+                        <div class="mt-3">
+                            <button class="btn btn-primary float-end" id="btn-Save">
+                                Registrar
+                            </button>
+
+                            <button class="btn btn-warning float-end me-2" id="btn-Reset">
+                                Limpiar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/lib/toast/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script src="assets/js/site/index/index.js"></script>
+</body>
+
+</html>
